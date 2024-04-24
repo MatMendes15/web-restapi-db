@@ -6,36 +6,36 @@ import javax.persistence.*;
 @Table(name = "disciplinas")
 public class Disciplina {
 
-  @Id
-  @GeneratedValue
-  private long id;
-  private String nome;
-  private int anoFundacao;
+    @Id
+    @GeneratedValue
+    private long id;
+    private String nome;
+    private int codMatricula; // int
 
-  public Disciplina() {
-  }
+    public Disciplina() {
+    }
 
-  public long getId() {
-    return id;
-  }
+    public long getId() {
+        return id;
+    }
 
-  public void setId(long id) {
-    this.id = id;
-  }
+    public void setId(long id) {
+        this.id = id;
+    }
 
-  public String getNome() {
-    return nome;
-  }
+    public String getNome() {
+        return nome;
+    }
 
-  public void setNome(String nome) {
-    this.nome = nome;
-  }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 
-  public int getAnoFundacao() {
-    return anoFundacao;
-  }
+    public int getcodMatricula() {
+        return codMatricula;
+    }
 
-  public void setAnoFundacao(int anoFundacao) {
-    this.anoFundacao = anoFundacao;
-  }
+    public void setcodMatricula(int codMatricula) { 
+        this.codMatricula = codMatricula;
+    }
 }
